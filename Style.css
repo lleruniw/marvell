@@ -49,6 +49,7 @@ body {
 }
 
 .heroes-list {
+    font-style: italic;
     font-size: 1rem;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -58,6 +59,7 @@ body {
 }
 
 .dc-title {
+    font-style: italic;
     font-size: 1.3rem;
     font-weight: 700;
     color: #000000;
@@ -68,6 +70,7 @@ body {
 }
 
 .dc-list {
+    font-style: italic;
     list-style: none;
     padding-left: 0;
     margin: 0.5rem 0;
