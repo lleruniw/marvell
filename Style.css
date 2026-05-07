@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/f.jpg');
+    line-height: 1.5;
+    color: #1e1f22;
+    padding: 2rem 1rem;
+}
+
+.marvel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.marvel-image-top {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.marvel-image-top img {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
+}
+
+.marvel-sub {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #FF0000;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-left: none;
+    padding-left: 0;
+}
+
+.description {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heroes-list {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #000000;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dc-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: right;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dc-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+    counter-reset: dc-counter;
+}
+
+.dc-list li {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    box-shadow: none;
+    counter-increment: dc-counter;
+    color: #2207A1;
+}
+
+.dc-list li::before {
+    content: counter(dc-counter) ".";
+    color: #2207A1;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.marvel-link {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+}
+
+.marvel-link a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.marvel-link a:hover {
+    text-decoration: underline;
+}
